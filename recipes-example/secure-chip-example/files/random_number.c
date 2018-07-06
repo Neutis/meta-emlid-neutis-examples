@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <cryptoauthlib.h>
 
-#define REACH_SERIAL_APPEND     "8243"      /* 2 ASCII symbols */
-
 ATCAIfaceCfg g_iface_config = {
     .iface_type        = ATCA_I2C_IFACE,
     .devtype           = ATECC508A,
