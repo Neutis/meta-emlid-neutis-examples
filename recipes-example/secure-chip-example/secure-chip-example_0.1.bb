@@ -8,8 +8,6 @@ SRC_URI = "file://random_number.c"
 
 INSANE_SKIP_${PN} = "file-rdeps"
 
-
-                                                                                 
 DEPENDS += "openssl-atecc508a"                                                       
 RDEPENDS_${PN} += "openssl-atecc508a"
 
@@ -25,4 +23,3 @@ do_install() {
 	install -d ${D}${bindir}
 	install -c -m 0755 ${B}/random_number ${D}${bindir}
 }
-                                                                                
